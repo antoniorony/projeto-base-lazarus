@@ -1,0 +1,48 @@
+object TelaPrincipal: TTelaPrincipal
+  Left = 351
+  Height = 496
+  Top = 250
+  Width = 1102
+  Caption = 'Granjaeasy '
+  ClientHeight = 496
+  ClientWidth = 1102
+  Color = clCaptionText
+  Menu = mmPrincipal
+  OnActivate = FormActivate
+  object Panel1: TPanel
+    Left = -16
+    Height = 496
+    Top = 0
+    Width = 1118
+    BevelColor = clActiveCaption
+    Color = clGradientActiveCaption
+    ParentColor = False
+    TabOrder = 0
+    OnClick = Panel1Click
+  end
+  object mmPrincipal: TMainMenu
+    Left = 30
+    Top = 12
+    object MenuItem1: TMenuItem
+      Caption = 'Utilitários'
+      object mnUsuario: TMenuItem
+        Caption = 'Usuário'
+      end
+      object mnGranja: TMenuItem
+        Caption = 'Granja'
+      end
+      object mnGalpao: TMenuItem
+        Caption = 'Galpão'
+      end
+      object mnLote: TMenuItem
+        Caption = 'Lote'
+      end
+      object mnAves: TMenuItem
+        Caption = 'Aves'
+      end
+      object mnFornecedores: TMenuItem
+        Caption = 'Fornecedores'
+      end
+    end
+  end
+end
